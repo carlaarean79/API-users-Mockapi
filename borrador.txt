@@ -1,0 +1,65 @@
+"user strict"
+//get all sources
+//consumir todos los objetos de una API
+fetch("https://647684219233e82dd53a1498.mockapi.io/users")
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err));
+
+    //get sources for id
+    //consumir objetos pos su id. se modica en el url
+    fetch(`https://647684219233e82dd53a1498.mockapi.io/users/27`)
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err)); 
+    
+
+    //delete a sources by id
+    //borrar algún recurso por su id. se modifica en el url
+    const id = "2";
+fetch(`https://647684219233e82dd53a1498.mockapi.io/users/${id}`, {
+    method: "DELETE",
+})
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err));
+
+//crear new source by id
+//modificar datos por id. se modifica en el url
+const newUser = {//modifico información ya existente. cambie datos por otros
+    avatar: "https://loremflickr.com/640/480/people",
+    name: "Mary",
+    apellido: "Lugones Gigena",
+    ocupation: "Programmer",
+};
+fetch('https://647684219233e82dd53a1498.mockapi.io/users/7',{
+    method:"PUT",
+    headers:{"content-type": "application/json"},
+    body: JSON.stringify(newUser)
+})
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err));
+
+//update source by id
+//agregar datos
+const updateUser = {//se crea un objeto js
+    avatar: "https://loremflickr.com/640/480/people",
+    name: "Marcelina",
+    apellido: "ROSMARINA",
+    ocupation: "Product Owner",
+    id:"30"
+    //se le debe colocar un id
+}
+fetch('https://647684219233e82dd53a1498.mockapi.io/users',{//el source va sin id
+    method:"POST",
+    headers:{"content-type": "application/json"},
+    body: JSON.stringify(updateUser)//convierte el objeto js a json
+
+})
+
+    .then(res => res.json())
+    .then(json => console.log(json))
+    .catch(err => console.log(err)); 
+
+   
