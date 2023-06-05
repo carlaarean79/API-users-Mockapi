@@ -29,10 +29,11 @@ divAdd.addEventListener("click",(e)=>{
 
 function buscarUser(e){
     const elementoClickeadoSrc = e.target.closest("#src");
+    const id="";
     if(elementoClickeadoSrc){
-        fetch(url)
+        fetch(`${url}/${id}`)
         .then(res => res.json())
-        .then(json=> json.forEach(users => {
+        .then(json=> (users) => {
             const inputSrc = document.getElementById("id");
           if(users.id === inputSrc.value ){
               console.log(users);
@@ -45,7 +46,7 @@ function buscarUser(e){
             
         })//then users
         .catch(err => console.log(err))
-        )}//end promise
+        }//end promise
     }//end function
 
 /* function buscarUsuario(usuario) {
