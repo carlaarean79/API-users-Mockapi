@@ -1,0 +1,149 @@
+body {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(188, 244, 244);
+}
+
+/*vinculos*/
+#vinculos {
+    margin-left: 5%;
+}
+
+#vinculos ul li {
+    display: inline-block;
+  
+}
+
+
+a {
+    font-size: 30px;
+}
+
+/*titulo y subtitulo*/
+#encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#container-encabezado {
+    width: 98%;
+    justify-content: center;
+    text-align: center;
+    background-color: azure;
+    margin: 10px 20px 10px 20px;
+}
+
+h1 {
+    letter-spacing: 10px;
+}
+
+/*lista con input y botones*/
+
+li {
+    list-style-type: none;
+}
+
+
+button {
+    max-width: 100%;
+    min-width: 40px;
+    height: 40px;
+    font-size: 0.9em;
+    border-radius: 6px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+/*div card*/
+#cards {
+    background-color: azure;
+    border: black solid 1px;
+    min-width: 75%;
+    min-height: 500px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.card-style {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 10px 10px 10px;
+    max-width: 20%;
+    background-color: beige;
+}
+
+img {
+    max-width: 80%;
+    margin: 20px 50px 10px 50px;
+    /*top - left -botton - rigth*/
+}
+
+/*formulario*/
+input {
+    width: 100%;
+    height: 30px;
+}
+
+/*contenedor del form*/
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 50%;
+    height: 400px;
+    float: left;
+    margin-left: 100px;
+}
+
+#dashed {
+    max-width: 60%;
+    margin-left: 10%; 
+}
+#submit{
+    margin-top: 10px;
+}
+
+
+/*addUsers.html contenedor cards users*/
+#container-form-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 600px;
+    margin-left: 100px;
+
+}
+
+#cards-add-users {
+    display: flex;
+}
+.card-style-add {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left:200px;
+    margin-top: 70px;
+    width: 80%;
+    border-radius: 20px;
+    border: 10px solid black;
+    }
+    /*parrafo agregado a base de datos*/
+.para-add{
+text-align: center;
+font-size: 2em;
+}
+/*button add*/
+#add{
+    font-size: 1em;
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+
+}

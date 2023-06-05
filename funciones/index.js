@@ -1,12 +1,10 @@
 "user strict"
 const div = document.getElementById("cards");
-const inputSrc = document.getElementById("input-icono");
-const btnSrc = document.getElementById("btn-src");
 let url = `https://647684219233e82dd53a1498.mockapi.io/users`;
 
 
-btnSrc.addEventListener("click", mostrarUser); 
-function mostrarUser() {
+/* btnSrc.addEventListener("click", mostrarUser);  */
+/* function mostrarUser() { */
 
     fetch(url)
         .then(res => res.json())
@@ -29,5 +27,5 @@ function mostrarUser() {
         .catch((error) => {
             console.log("TypeError " + error)
         });
-}//fin funcion
+/* }//fin funcion */
 
