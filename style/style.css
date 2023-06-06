@@ -136,7 +136,7 @@ input {
     border: 10px solid black;
     }
     /*parrafo agregado a base de datos*/
-.para-add{
+#para-add{
 text-align: center;
 font-size: 2em;
 }
